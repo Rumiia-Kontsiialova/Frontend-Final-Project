@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Frontend Final Project JS</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__content--desktop">
+          <div class="header__right-block">
+            <div class="header__logo">
+              <a href="./index.html">
+                <img src="/img/svg/logo.svg" alt="logo" />
+              </a>
+            </div>
+            <form class="search-form search-form--desktop" h>
+              <input
+                type="text"
+                class="search-form__input"
+                placeholder="Search events"
+              />
+              <input
+                type="text"
+                class="search-form__input"
+                value="Mountain View, CA"
+              />
+              <button type="button" class="search-form__button"></button>
+            </form>
+          </div>
+          <div class="header__left-block">
+            <div id="language">
+              <div class="language">
+                <img src="/img/svg/language.svg" alt="Icon language"/> 
+                <label for="language"></label>
+                <select id="language" style="border: none;">
+                  <option value="en">English</option>
+                  <option value="de">Deutsch</option>
+                  <option value="uk">Українська</option>
+                </select> 
+              </div> 
+            </div>
+            <div class="header__login">
+              <button class="login__btn">Log in</button>
+              <button class="login__btn">Sign up</button>
+            </div>
+          </div>
+        </div>
+        <div class="search-form search-form--mobile">
+          <input
+            type="text"
+            class="search-form__input"
+            placeholder="Search events"
+          />
+          <button type="button" class="search-form__button"></button>
+        </div>
+      </header>
+
+    <main>
+        <div class="main-container">
+            <h1>Events near New York, NY</h1>
+            <br>
+            <br>
+            <p>Events</p>
+        </div>
+
+        <div class="container_filters">
+          <section class="filters-container">
+            <select id="categoryFilter">
+                <option value="">Any category</option>
+                <option value="Social Activities">Social Activities</option>
+                <option value="Hobbies and Passions">Hobbies and Passions</option>
+                <option value="Health and Wellbeing">Health and Wellbeing</option>
+                <option value="Business">Business</option>
+                <option value="Technology">Technology</option>
+            </select>
+            <select id="typeFilter">
+                <option value="">Any type</option>
+                <option value="online">Online</option>
+                <option value="offline">Offline</option>
+            </select>
+            <select id="distanceFilter">
+                <option value="">Any distance</option>
+                <option value="5">5 km</option>
+                <option value="10">10 km</option>
+                <option value="15">15 km</option>
+                <option value="25">25 km</option>
+                <option value="50">50 km</option>
+                <option value="75">75 km</option>
+                <option value="100">100 km</option>
+            </select>
+        </section>
+        </div>
+
+        <!-- <div class="cards-after-filters" id="cardsAfterFilters">
+
+        </div> -->
+
+
+        <section class="content">
+          <div class="events-map-container">
+            <div class="left">
+              <div id="eventsContainer" class="events-container"></div>
+            </div>
+            <div class="right">
+              <div class="find-events">
+                <h3>Find events near New York, NY</h3>
+                <div class="map-container">
+                  <img src="/img/png/map.jpg" alt="" width="350" height="285" style="border:0;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer_width">
+          <div class="create_meetup">
+            <p>Create your own Meetup group.</p>
+            <button class="get_started">Get Started</button>
+          </div>
+  
+          <div class="footer_navi">
+            <ul>
+              <li>Your Account</li>
+              <li>Sign up</li>
+              <li>Log in</li>
+              <li>Help</li>
+              <li>Become an Affiliate</li>
+            </ul>
+  
+            <ul>
+              <li>Discover</li>
+              <li>Groups</li>
+              <li>Calendar</li>
+              <li>Topics</li>
+              <li>Cities</li>
+              <li>Online Events</li>
+              <li>Local Guides</li>
+              <li>Make Friends</li>
+            </ul>
+  
+            <ul>
+              <li>Meetup</li>
+              <li>About</li>
+              <li>Blog</li>
+              <li>Meetup Pro</li>
+              <li>Careers</li>
+              <li>Apps</li>
+              <li>Podcast</li>
+            </ul>
+          </div>
+          <div class="socials">
+          <p>Follow us</p>
+          <div class="download">
+          <ul class="soc_media">
+
+            <li><img src="/img/svg/Facebook.svg" alt="" /></li>
+            <li><img src="/img/svg/Twitter.svg" alt="" /></li>
+            <li><img src="/img/svg/YouTube.svg" alt="" /></li>
+            <li><img src="/img/svg/Instagram.svg" alt="" /></li>
+            <li><img src="/img/svg/TikTok.svg" alt="" /></li>
+          </ul>
+          <div class="download_links">
+            <img src="/img/svg/GooglePlay.svg" alt="" />
+            <img src="/img/svg/AppStore.svg" alt="" />
+            
+          </div>
+        </div>
+          <ul class="last_footer">
+            <li>© 2024 Meetup</li>
+            <li>Terms of Service</li>
+            <li>Privacy Policy</li>
+            <li>Do Not Sell or Share My Personal Data</li>
+            <li>Cookie Policy</li>
+            <li>Help</li>
+          </ul>
+        </div>
+      </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
