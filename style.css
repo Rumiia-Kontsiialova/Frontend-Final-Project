@@ -1130,7 +1130,7 @@
     margin-bottom: 20px;
     margin-right: 10px;
     margin-top: 25px;
-    display: flex;        /* Делаем карточку флекс-контейнером */
+    display: flex;        
     align-items: center;
     cursor: pointer;
   }
